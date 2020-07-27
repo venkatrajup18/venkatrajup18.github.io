@@ -1,0 +1,279 @@
+<!-- Resume -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Resume · Venkat Raju P</title>
+    <meta name="Description" content="Venkat Raju is masters graduate from Berkeley specialized in Optimization, Data Analysis and Product Management">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="raj_logo2.ico"/>
+    <link rel="icon" type="image/png" href="Raj_logo2.PNG"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160710404-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160710404-1');
+    </script>
+
+    <!-- Twitter Preview -->
+    <!-- <meta name="twitter:card" content="summary_large_image"/> -->
+    <!-- <meta name="twitter:site" content="@zainkho"/> -->
+    <!-- <meta name="twitter:creator" content="@zainkho"/> -->
+    <!-- <meta name="twitter:title" content="Zain Khoja" /> -->
+    <!-- <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/> -->
+    <!-- <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="index.html"><img alt="Raj logo" src="Raj_logo2.PNG" class="zk-logo"></a>
+                <h3 class="medium content-web">Venkat Raju P</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="index.html">About</a></h5>
+                    <h5 class="option"><a href="work.html">Work</a></h5>
+                    <h5 class="option"><a href="flaneur.html">Flaneur</a></h5>
+                    <h5 class="option selected">Resume</h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">💼</h1>
+                <div>
+                    <h1 class="content-mobile">💼</h1>
+                    <h1>Resume.<br>
+                    <span class="medium">Or download it <a href="vrp-resume.pdf" aria-label="Venkat Raju resume" target="_blank" rel="noopener" class="link" style="border-bottom: 0.075em solid var(--black)">here</a> if you like.</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="c6 main">
+
+        <div class="section">
+            <h5 class="subtitle">Professional Experience</h5>
+            <h3><a href="https://www.corporate.carrier.com/" target="_blank" rel="noopener" class="link" style="color: #DA5E29">Carrier Corporation</a></h3>
+            <p class="medium">Manager, Product Analytics & Strategy · Jul'16 to Jun'19</p>
+            <br>
+            <p>
+                Managed the B2B Key Accounts for Carrier &Toshiba VRF product lines across South India and scaled the portfolio from 6M $ to 30M $ through
+                detailed client business analysis and monitoring performance data inputs over Dynamic CRM & TABLEAU.
+            </p>
+            <br>
+            <p>
+                Piloted a Product-Market Fit project involving analysis of organically sourced market data sets and created dashboards for all product teams to
+                reposition products by client buying potential, which resulted in 30% YOY growth in SQL metrics.
+            </p>
+            <br>
+            <p>
+                Contributed to 10% improvement in product efficiency to increase market share, by cross-functionally collaboration with the Engineering,
+                Marketing & Finance teams and performed seasonal competitor analysis & product bench-marking, growing SOW by 15%.
+            </p>
+            <br>
+            <p>
+                Played the role of a technical consultant throughout the VRF product-life cycle from system design until sales deployment to drive retention and
+                scale repeat client orders by monitoring KPIs like SOW, WL%, etc, front-ending feature documentation and delivering P2P marketing & benchmarking
+                presentations to C level executives, that resulted in an average 21% increase in client satisfaction.
+            </p>
+            <br>
+            <p>
+                Recognized as "Star Performer" in 2017 & 2019 for 2M $ YOY revenue contribution and improved business strategy management.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3><a target="_blank" rel="noopener" class="link" style="color: #C4291F">HweAC</a></h3>
+            <p class="medium">Founder & Analyst · Jan 2020 to Present</p>
+            <br>
+            <p>
+                Developed concept charts, user stories & pain points analysis to deploy test cases and identify Product Market fit.
+            </p>
+            <br>
+            <p>
+                Used FIGMA to design prototypes and map customer journey. Received a 60% feedback rate with positive review.
+            </p>
+            <br>
+            <p>
+                Re-aligning product scope and vision to implement benchmarking UX /UI interactive tools by adding Machine Learning for smart contracts.
+            </p>
+        </div>
+
+        <!-- Berkeley  -->
+        <div class="section">
+            <h5 class="subtitle">Education</h5>
+            <h3><a href="https://www.berkeley.edu" target="_blank" rel="noopener" class="link berkeley-link">University of California, Berkeley</a></h3>
+            <p class="medium">M.Eng. Industrial Engineering & Operations Research · May 2020</p>
+            <br>
+            <p> Optimization · Data Analytics · Product Management · Marketing</p>
+            <p>GPA 3.63</p>
+            <h3><a href="https://www.berkeley.edu" target="_blank" rel="noopener" class="link berkeley-link">National Institute of Technology, Trichy</a></h3>
+            <p class="medium">B.Tech Product Engineering · May 2016</p>
+            <br>
+            <p> Optimization · Supply Chain · Industrial Economics · Lean Manufacturing</p>
+            <p>GPA 4.0</p>
+        </div>
+
+        <!-- Cryptocurrency -->
+        <div class="section">
+            <h5 class="subtitle">Projects</h5>
+            <h3><a href="FAA.html" target="_blank" rel="noopener" class="link currency-link">Aviation Data Analyst</a></h3>
+            <p class="medium">Federal Aviation Agency · Sept 2019 to Present</p>
+            <br>
+            <p>
+                Used Feature correlation method to identify the relationship between equipment outage, airport delays and operational costs to aid smart investment decisions.
+            </p>
+            <br>
+            <p>
+                Incorporated Centrality and Reliability Analysis over the 10M rows of BTS dataset using Python & used TABLEAU for visualization.
+            </p>
+
+            <h3><a href="Lumen.html" target="_blank" rel="noopener" class="link currency-link">Energy Data Analyst</a></h3>
+            <p class="medium">Lumen Solar Energy · Jan 2020 to May 2020</p>
+            <br>
+            <p>
+                At this startup, actively sourced relevant Big Datasets to build a 1.7M rows of training data and build models for future load predictions.  
+            </p>
+            <br>
+            <p>
+                Achieved 67% accuracy though Time Series Analysis & ARIMA modelling to predict 2020 energy load consumption.
+            </p>
+
+        </div>
+
+        <!-- Activities -->
+        <div class="section">
+            <h5 class="subtitle">Activities</h5>
+            <h3><a href="https://www.youtube.com/watch?v=0gqZoISH8OE&t=557s" target="_blank" rel="noopener" class="link" style="color: #4166AF">IEEE Keynote Speaker</a></h3>
+            <p class="medium"> ITC 2020, Gujarat · 27th April 2020</p>
+            <br>
+            <p>
+                Invited as Keynote speaker for the IEEE event - International Tech Conclave'20.
+            </p>
+            <br>
+            <p>
+                Delivered a YouTube live webinar to 6000+ audience on the topic "Trends and future of Data Science". 
+            </p>
+            <br>
+            <p>
+                Shared insights on Linear Regression and Neural networks and how the simulation helps with identifying COVID spread.
+            </p>
+
+            <h3><a href="https://physics.berkeley.edu/" target="_blank" rel="noopener" class="link" style="color: #4166AF">UC Berkeley</a></h3>
+            <p class="medium"> Physics Teaching Assistant · Jan 2020 to May 2020</p>
+            <br>
+            <p>
+                Taught "Introductory Physics: Electricity, Magnetism, Waves, Relativity" to 30 Students.
+            </p>
+            <br>
+            <p>
+                Incorporated reading modules & exercises to ease conceptual understanding.
+            </p>
+            <br>
+            <p>
+                Assessed student performance through quizzes, labs, and providing 1-1 tutoring.
+            </p>
+
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"> Technical Skills</h5>
+            <h3>Programming & tools</h3>
+            <br>
+            <p>TABLEAU ·Python · R · SQL · HTML/CSS · CRM </p>
+        </div>
+
+        <div class="section">
+            <h3>Languages</h3>
+            <br>
+            <p>English · Hindi · Tamil · Telugu(Native) · Kannada</p>
+        </div>
+
+        <div class="section">
+            <h3>Interests</h3>
+            <br>
+            <p>Badminton · Weight Training · Hiking · Photography · Swimming · Writing</p>
+        </div>
+
+    </main>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+          <p>Want to work with me or grab some coffee casually? Feel free to email me at <a href="mailto:venkat.raju@berkeley.edu?subject=Hey! I found you interesting" target="_blank" rel="noopener">venkat.raju@berkeley.edu</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@venkat.raju" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+
+</body>
+
+</html>

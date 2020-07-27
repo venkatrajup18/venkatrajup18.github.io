@@ -1,0 +1,150 @@
+<!-- About -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Raj</title>
+    <meta name="Description" content="Raj is a masters graduate student from UC Berkeley from Industrial Engineering & Operations Research.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="raj_logo2.ico"/>
+    <link rel="icon" type="image/png" href="Raj_logo2.PNG"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160710404-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160710404-1');
+    </script>
+
+    <!-- Twitter Preview -->
+    <!-- <meta name="twitter:card" content="summary_large_image"/> -->
+    <!-- <meta name="twitter:site" content="@zainkho"/> -->
+    <!-- <meta name="twitter:creator" content="@zainkho"/> -->
+    <!-- <meta name="twitter:title" content="Zain Khoja" /> -->
+    <!-- <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/> -->
+    <!-- <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="index.html"><img alt="Raj logo" src="Raj_logo2.PNG" class="zk-logo"></a>
+                <h3 class="medium content-web">Venkat Raju</h3>
+                <nav class="nav">
+                    <h5 class="option selected">About</h5>
+                    <h5 class="option"><a href="work.html">Work</a></h5>
+                    <h5 class="option"><a href="flaneur.html">Flaneur</a></h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <div>
+                    <h1>Hey there,</h1>
+                    <h1 class="medium">Thanks for stopping by!</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="c12 summary main">
+        <div>
+            <p>
+            My name is Venkat Raju, you can call me <b>Raj.</b></p>
+           <p> Since we live in a 3D world, here are my 3 core dimensions:-            </p><br>
+            <p>
+                <b>Technical:</b> I’m a masters graduate from <a href="https://www.berkeley.edu/" target="_blank" rel="noopener" class="link berkeley-link">UC Berkeley</a> specialized in Industrial Engineering & Operations Research.
+                My focus areas are Optimization, Data Analytics & Product Management. I'm also an <a href="https://www.youtube.com/watch?v=0gqZoISH8OE" target="_blank" rel="noopener" class="link IEEE-link"><b>IEEE keynote speaker</b></a> at ITC'20 by BVM University, India.
+                I completed my undergraduation at <a href="http://www.nitt.edu/" target="_blank" rel="noopener" class="link nit-link">National Institute of Technology, Trichy in the field of Production Engineering.</a>
+            </p><br>
+            <p>
+                <b>Flaneur:</b> I love to travel and experience different cultures. It helps me grow as a person. While living in India, I hiked the Himalayas, did deep-sea diving in the Arabian Sea and drove 450 mile in a single trip.
+                At Berkeley, I lived at <a href="https://ihouse.berkeley.edu/" target="_blank" rel="noopener" class="link ihouse-link">International House</a> and met incredible people from all corners of the world who taught me a few words, cuisines and to make a home anywhere I went to.
+                When I'm bored -like we all are sometimes, I write my thoughts on <a href="https://medium.com/@venkat.raju" target="_blank" rel="noopener" class="link medium-link" ><b>Medium</b></a>, indulge in 3 mile barefoot running, read a book while I sip hot chocolate or curate music albums on spotify.
+            </p><br>
+            <p>
+                <b>Entrepreneur:</b> I'm building a B2B contracting SaaS product by exploring different use cases and tests. Reach out to chat about it or work together if you have skills you think we could use.
+            </p>
+        </div>
+        <img alt="picture of Raj" src="Raj_newmain.jpg" class="avi">
+    </main>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+            <p>Want to work with me or grab some coffee casually? Feel free to email me at <a href="mailto:venkat.raju@berkeley.edu?subject=Hey, I found you interesting!" target="_blank" rel="noopener">venkat.raju@berkeley.edu</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@venkat.raju" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!-- Currency -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Cryptocurrency · Alex Chen</title>
+    <meta name="Description" content="Alex Chen is currently a master student at Berkeley studying FinTech.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="ac-logo.ico"/>
+    <link rel="icon" type="image/png" href="ac-logo.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160710404-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160710404-1');
+    </script>
+
+    <!-- Twitter Preview -->
+    <!-- <meta name="twitter:card" content="summary_large_image"/> -->
+    <!-- <meta name="twitter:site" content="@zainkho"/> -->
+    <!-- <meta name="twitter:creator" content="@zainkho"/> -->
+    <!-- <meta name="twitter:title" content="Zain Khoja" /> -->
+    <!-- <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/> -->
+    <!-- <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="/"><img alt="Alex Chen logo" src="ac-logo.svg" class="zk-logo"></a>
+                <h3 class="medium content-web">Alex Chen</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="/">About</a></h5>
+                    <h5 class="option"><a href="work">Work</a></h5>
+                    <h5 class="option"><a href="travel">Travel</a></h5>
+                    <h5 class="option"><a href="resume">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <h1 class="content-web emoji">⛓</h1>
+                <div>
+                    <h1 class="content-mobile">⛓</h1>
+                    <h1 class="currency-link">Crypto<br>
+                    <span class="medium">Cryptocurrency Market Analysis</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    <h5 class="subtitle">Overview</h5>
+                    <p>
+                      Network analysis, time series analysis, intraday analysis, and data visualization on the cryptocurrency market.
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Roles</h5>
+                    <p>Researcher</p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Team</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/turnerandrewc/" target="_blank" rel="noopener" class="link currency-link">Andrew Turner</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/andy-tso/" target="_blank" rel="noopener" class="link currency-link">Andy Tso</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/sean-ko/" target="_blank" rel="noopener" class="link currency-link">Sean Ko</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/taras-zhylenko-458452160/" target="_blank" rel="noopener" class="link currency-link">Taras Zhylenko</a>
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Timeline</h5>
+                    <p>Sept 2018 to Dec 2018</p>
+                </div>
+            </div>
+            <img alt="Cryptocurrency Analysis" src="work/currency/currency-poster.jpg" class="summary-section">
+        </div>
+    </div>
+
+    <div class="c6 divider"></div>
+
+    <div class="c6">
+        <div class="section">
+            <h5 class="subtitle">Problem</h5>
+            <h2 class="currency-title">Trading, then what?</h2>
+            <p>
+              The cryptocurrency market is an interesting new part of the financial world, with the advent ofblockchain technology showing great promise for the future of decentralized systems.
+              However, the cryptocurrency market is not well understood, as people question the inherent value of cryptocurrencies as well as the legitimacy of cryptocurrency exchanges.
+            </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Questions</h2>
+            <p>
+              In order to get a good understanding of how the cryptocurrency markets work, we attempt to answer the following questions:
+            </p>
+            <br>
+            <ol>
+                <li>What currencies serve as a good representation of the whole market?</li>
+                <li>How to quantify the goodness of such representation?</li>
+                <li>How to detect when the market is stable and what are the consequences of it being unstable?</li>
+                <li>How is the behavior of the market on the hour horizon is different from its behavior on the week horizon?</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Methods</h5>
+            <h2 class="currency-title">Currencies Through Time</h2>
+            <p>
+              Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), Monero (XMR), Dash (DASH), and ZCash (ZEC), currently capturing a significant 60% of the total cryptocurrency market cap.
+            </p>
+            <br>
+            <p>
+              We observe only after the crash in early 2018 does the trade activity heavily centralize on Bitcoin. Although Bitcoin had been dominant, our measure of activity shows that smaller currencies had their markets stretched further to their limits, by trading indirectly around Bitcoin.
+            </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Evolution of Correlations</h2>
+            <p>
+              Apart from knowing the market trade volume correlations, we want to dig more into the price series correlations.
+              We want to answer some questions: What are the correlations of cryptocurrency prices?
+              How do the correlations changes over time? Can we find some interesting patterns by looking at their correlations?
+              We chose 2016 as a starting point because after this year the data is ample so we can avoid some bias.
+            </p>
+            <img alt="Correlations" src="work/currency/correlations.png" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Price Series & Market Regimes</h2>
+            <p>
+              Starting from this issue, we decide to figure out the location and duration of all relatively stable and relatively chaotic periods (regime change).
+              We will use this information to train our future models on a reliable time frame and also, to assess market efficiency during the times of instability.
+            </p>
+            <br>
+            <p>
+              First, we display the results of our KS-testing (Kolmogorov–Smirnov). We see that the regime change points capture oscillations of the market very well.
+            </p>
+            <img alt="KS-testing-1" src="work/currency/KS-testing-1.png" class="img">
+            <p>
+              Also, we see that the periods when the momentum strategy yields the highest returns coincide with regime change regions that we have found.
+              It reinforces the assumption that in times of uncertainty, market offers good investing opportunities
+            </p>
+            <img alt="KS-testing-2" src="work/currency/KS-testing-2.png" class="img">
+        </div>
+
+        <!-- Intraday Analysis -->
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Intraday Analysis</h2>
+            <p>
+              We used directed graphs to analyze value flows between cryptocurrencies.
+              Edges are weighted by percent change times volume in ten-minute intervals.
+            </p>
+            <img alt="Weights Flow" src="work/currency/weight-flow.png" class="img">
+            <p>
+              We observe sudden flows in and out of some cryptocurrencies, spiked changes in the correlation matrix, and this behavior yields arbitrage opportunity via exchange rate cycles.
+            </p>
+            <img alt="spike" src="work/currency/spikes.png" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Results</h5>
+            <h2 class="currency-title">Conclusions</h2>
+            <ol>
+              <li>We observe only after the crash in early 2018 does the trade activity heavily centralize on Bitcoin.
+              <li>Behavior among major cryptocurrencies has become less independent (more correlated) since the crash in early 2018.
+              <li>Periods between chaotic and stable price dynamics allow for profit opportunities
+              <li>Dramatic intraday swings are evidence of market manipulation and yield arbitrage opportunities in exchange circles.
+            </p>
+        </div>
+    </div>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+          <p>Work with me or grab some coffee, feel free to email me at <a href="mailto:yuhao_chen@berkeley.edu?subject=Hey!" target="_blank" rel="noopener">yuhao_chen@berkeley.edu</a>.</p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@alex_chen_97" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://www.linkedin.com/in/yuhao-alex-chen-059346174/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Back -->
+        <a href="/" aria-label="back" class="content-web no-display back"></a>
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+
+</body>
+
+</html>

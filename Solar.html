@@ -1,0 +1,255 @@
+<!-- Currency -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Solar · Venkat Raju</title>
+    <meta name="Description" content="Venkat Raju is masters graduate from Berkeley specialized in Optimization, Data Analysis and Product Management.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="Raj_logo2.ico"/>
+    <link rel="icon" type="image/png" href="Raj_logo2.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160710404-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160710404-1');
+    </script>
+
+    <!-- Twitter Preview -->
+    <!-- <meta name="twitter:card" content="summary_large_image"/> -->
+    <!-- <meta name="twitter:site" content="@zainkho"/> -->
+    <!-- <meta name="twitter:creator" content="@zainkho"/> -->
+    <!-- <meta name="twitter:title" content="Zain Khoja" /> -->
+    <!-- <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/> -->
+    <!-- <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="index.html"><img alt="Raj logo" src="Raj_logo2.PNG" class="zk-logo"></a>
+                <h3 class="medium content-web">Venkat Raju P</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="index.html">About</a></h5>
+                    <h5 class="option"><a href="work.html">Work</a></h5>
+                    <h5 class="option"><a href="flaneur.html">Flaneur</a></h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <div>
+                    <h1 class="currency-link">Solar<br>
+                    <span class="medium">Energy Load Prediction</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    <h5 class="subtitle">Overview</h5>
+                    <p>
+                      ARIMA, Time series Analysis and Data Visualization for 4 years of Energy data from UC Berkeley Buildings.
+                    </p>
+                    <br>
+                    <p>
+                      Due to a signed confidentiality/Non-Disclosure Agreement, limited visuals can be shared.
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Roles</h5>
+                    <p>Data Analyst</p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Team</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener" class="link currency-link">Venkat Raju P</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/neelabh-mishra/" target="_blank" rel="noopener" class="link currency-link">Neelabh Mishra</a>
+                    </p> 
+                    <p>
+                        <a href="https://www.linkedin.com/in/stephanie-stickel/" target="_blank" rel="noopener" class="link currency-link">Stephanie Stickel</a>
+                    </p> 
+                    <p>
+                        <a href="https://www.linkedin.com/in/yana-mykhailovska/" target="_blank" rel="noopener" class="link currency-link">Yana Mykhailovska </a>
+                    </p>             
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Timeline</h5>
+                    <p>Jan 2020 to May 2020</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c6 divider"></div>
+
+    <div class="c6">
+        <div class="section">
+            <h5 class="subtitle">Problem Statement</h5>
+            <h2 class="currency-title"> Startup: Lumen Energy</h2>
+            <p>
+                They are on a mission to help commercial buildings substitute traditional energy consumption with Solar. Can this bring better economical benefits and a renewable standard?
+             </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Questions</h2>
+            <p>
+              In order to get a good understanding, we attempt to answer the following questions:
+            </p>
+            <br>
+            <ol>
+                <li>What are the various factors that contribute to energy load in a building?</li>
+                <li>Does weather drastically effect energy consumption of a building?</li>
+                <li>Do identical building types produce similar energy load patterns?</li>
+                <li>What features of a building affect the energy load?</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Methods</h5>
+            <h2 class="currency-title">Overall Framework</h2>
+            <p>
+              We sourced our project data with an initial dataset from LBNL, Berkeley. We received input data on Building features, energy load and weather. The datasets were cleaned of discrepancies; the missing values were predicted using forward fill and outliers were removed. The rest of the process is described below.      
+            </p>
+            <br>
+            <img alt="Flowchart" src="solar_flowchart.JPG" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Weather Decomposition</h2>
+            <p>
+              After forming our training dataset,we performed weather boxplot to observe outliers and patterns in the datasets over the 4 years.
+            </p>
+            <img alt="Weather boxplot" src="weather_boxplot.JPG" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Time Series Decomposition</h2>
+            <p>
+              After forming our training dataset, we performed Time Series decomposition to observe the Trend, Seasonality and Residual error. Multiplicative decomposition does a finer job. Below we present for the year 2019 weather.
+            </p>
+            <img alt="Time Series" src="timeseries.JPG" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">ARIMA Modelling</h2>
+            <p>
+              <b>Auto Regression Integrated Moving Averages:</b> This is a simultaneous linear regression performed on both the lagged values and forecast errors. Our model was already stationary through the ADF test, so we did not have to difference it (d=0). We performed autocorrelation to determine p,q values.   
+            </p>
+            <br>
+            <img alt="ARIMA PAC" src="arima2.JPG" class="img">
+            <p>
+             <b>Results:</b>Our MAPE value was about 22%. The fit could have been improved with larger training datasets. Prediction listed below. 
+            </p>
+            <img alt="ARIMA Results" src="arima1.JPG" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Results</h5>
+            <h2 class="currency-title">Conclusions</h2>
+            <ol>
+              <li>Owing to a Non-Disclosure Agreement, I am disclosing only 1 example result from each result category.
+              <li>The results presented were using limited datasets of LBNL from UC Berkeley Campus, hence had an accuracy of 78%.
+              <li>Future scope of better model training can be performed with ANN (Artificial Neural Networks).
+              <li>The presented work/results are being refined and added to the backend of a Lumen's UI to help building owners ROI in solar investments.
+            </p>
+        </div>
+    </div>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+          <p>Want to work with me or grab some coffee casually? Feel free to email me at <a href="mailto:venkat.raju@berkeley.edu?subject=Hey, I found you interesting!" target="_blank" rel="noopener">venkat.raju@berkeley.edu</a></p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@venkat.raju" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Back -->
+        <a href="/" aria-label="back" class="content-web no-display back"></a>
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+<!-- Index -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Work · Venkat Raju P</title>
+    <meta name="Description" content="Venkat Raju is masters graduate from Berkeley specialized in Optimization, Data Analysis and Product Management.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="Raj_logo2.ico"/>
+    <link rel="icon" type="image/png" href="Raj_logo2.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160710404-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160710404-1');
+    </script>
+
+    <!-- Twitter Preview -->
+    <!-- <meta name="twitter:card" content="summary_large_image"/> -->
+    <!-- <meta name="twitter:site" content="@zainkho"/> -->
+    <!-- <meta name="twitter:creator" content="@zainkho"/> -->
+    <!-- <meta name="twitter:title" content="Zain Khoja" /> -->
+    <!-- <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/> -->
+    <!-- <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="index.html"><img alt="Raj logo" src="Raj_logo2.PNG" class="zk-logo"></a>
+                <h3 class="medium content-web">Venkat Raju P</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="index.html">About</a></h5>
+                    <h5 class="option selected">Work</h5>
+                    <h5 class="option"><a href="flaneur.html">Flaneur</a></h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <div>
+                    <h1 class="medium">Here's a glimpse of my work at <a href="https://www.berkeley.edu/" target="_blank" rel="noopener" class="link berkeley-link">Berkeley</a>.</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="c12 content">
+            <!-- FAA -->
+            <a href="Aviation.html"><div class="hvr-float exp exp-currency">
+                <div class="exp-content">
+                    <img alt="flight logo" src="flight2.svg" class="currency-logo">
+                    <h2>Aviation</h2>
+                    <h5> Lightening Reliability Analysis</h5>
+                </div>
+            </div></a>
+
+            <!-- Lumen -->
+            <a href="Solar.html"><div class="hvr-float exp exp-interface">
+                <div class="exp-content">
+                    <img alt="Solar logo" src="solar.svg" class="interface-logo">
+                    <h2 class="">Solar</h2>
+                    <h5 class="medium">Energy Load prediction</h5>
+                </div>
+            </div></a>
+
+               <!-- HWeAC -->
+               <a href="interface"><div class="hvr-float exp exp-interface">
+                <div class="exp-content">
+                    <img alt="startup logo" src="bulb.svg" class="interface-logo">
+                    <h2 class="">Startup</h2>
+                    <h5 class="medium">A B2B Smart contracting SaaS Platform</h5>
+                </div>
+            </div></a>
+
+            <!-- IEEE Keynote Webinar -->
+            <a href="ieee.html"><div class="hvr-float exp exp-currency">
+                <div class="exp-content">
+                    <img alt="Data logo" src="ieee.svg" class="currency-logo">
+                    <h2>KeyNote Speaker</h2>
+                    <h5>Data Analytics- Trends&Future</h5>
+                </div>
+            </div></a>
+
+        </main>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+          <p>Want to work with me or grab some coffee casually? Feel free to email me at <a href="mailto:venkat.raju@berkeley.edu?subject=Hey, I found you interesting!" target="_blank" rel="noopener"> venkat.raju@berkeley.edu</a></p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@venkat.raju" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+</body>
+
+</html>

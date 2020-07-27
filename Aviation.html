@@ -1,0 +1,261 @@
+<!-- Currency -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head id="top">
+    <meta charset="UTF-8">
+    <title>Aviation · Venkat Raju</title>
+    <meta name="Description" content="Venkat Raju is masters graduate from Berkeley specialized in Optimization, Data Analysis and Product Management.">
+
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <!-- Javascript -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        /* Back button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.back').removeClass('no-display');
+          } else {
+              $('.back').addClass('no-display');
+          }
+        });
+
+        /* Forward button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.forward').removeClass('no-display');
+          } else {
+              $('.forward').addClass('no-display');
+          }
+        });
+
+        /* Scroll button appears on scroll */
+        $(window).scroll(function(){
+          if ($(this).scrollTop() > 20) {
+              $('.scroll-to-top').removeClass('no-display');
+          } else {
+              $('.scroll-to-top').addClass('no-display');
+          }
+        });
+
+        /* Smooth Scrolling */
+        $(document).ready(function(){
+          $("a").on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 500, function(){
+                    window.location.hash = hash;
+                });
+            }
+          });
+        });
+    </script>
+
+    <!-- Webpage Icons -->
+    <link rel="icon" type="image/x-icon" href="Raj_logo2.ico"/>
+    <link rel="icon" type="image/png" href="Raj_logo2.png"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160710404-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160710404-1');
+    </script>
+
+    <!-- Twitter Preview -->
+    <!-- <meta name="twitter:card" content="summary_large_image"/> -->
+    <!-- <meta name="twitter:site" content="@zainkho"/> -->
+    <!-- <meta name="twitter:creator" content="@zainkho"/> -->
+    <!-- <meta name="twitter:title" content="Zain Khoja" /> -->
+    <!-- <meta name="twitter:description" content="Zain Khoja is a designer and student at Cornell."/> -->
+    <!-- <meta name="twitter:image:src" content="https://zainkho.com/zk-screenshot.png"/> -->
+
+</head>
+
+<body class="grid">
+    <!-- Header -->
+    <header class="c12">
+        <!-- Nav -->
+        <div class="hero">
+            <div class="header">
+                <a href="index.html"><img alt="Raj logo" src="Raj_logo2.PNG" class="zk-logo"></a>
+                <h3 class="medium content-web">Venkat Raju P</h3>
+                <nav class="nav">
+                    <h5 class="option"><a href="index.html">About</a></h5>
+                    <h5 class="option"><a href="work.html">Work</a></h5>
+                    <h5 class="option"><a href="flaneur.html">Flaneur</a></h5>
+                    <h5 class="option"><a href="resume.html">Resume</a></h5>
+                </nav>
+            </div>
+
+            <!-- Title -->
+            <div class="title">
+                <div>
+                    <h1 class="currency-link">Aviation<br>
+                    <span class="medium">Lightening Induced Outage Analysis</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="c12 main">
+        <div class="summary">
+            <div class="summary-section">
+                <div class="section summary-item">
+                    <h5 class="subtitle">Overview</h5>
+                    <p>
+                      Network analysis, Centrality Analysis, and Data Visualization for 10 years of Air-Transportation data.
+                    </p>
+                    <br>
+                    <p>
+                      Due to a signed confidentiality/Non-Disclosure Agreement, limited visuals can be shared.
+                    </p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Roles</h5>
+                    <p>Data Analyst</p>
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Team</h5>
+                    <p>
+                        <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener" class="link currency-link">Venkat Raju P</a>
+                    </p>
+                    <p>
+                        <a href="https://www.linkedin.com/in/suhas-b-u-252586110/" target="_blank" rel="noopener" class="link currency-link">Suhas B Umesh</a>
+                    </p>
+                    <p>
+                        <a target="_blank" rel="noopener" class="link currency-link">Dingyi Dong</a>
+                    </p>                
+                </div>
+
+                <div class="section summary-item">
+                    <h5 class="subtitle">Timeline</h5>
+                    <p>Sept 2019 to Present</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="c6 divider"></div>
+
+    <div class="c6">
+        <div class="section">
+            <h5 class="subtitle">Problem Statement</h5>
+            <h2 class="currency-title">Why is your flight delayed?</h2>
+            <p>
+              The U.S. Aviation System is the most complex and the largest of all civil infrastructure systems, operating 24/7, comprising of over 20,000 airports of varying sizes, and over 70,000 facilities, equipment units and services.
+              This study will quantify the vulnerability of critical aviation infrastructure systems, such as Air Traffic Control Towers, to failures and convective weather (such as lighting strikes).  Estimating the impact of failures on airport/airspace capacity, delay and operational costs can help in making smart investment decisions into infrastructure. As a result, aircraft operations can maintain high level of safety.
+             </p>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Questions</h2>
+            <p>
+              In order to get a good understanding, we attempt to answer the following questions:
+            </p>
+            <br>
+            <ol>
+                <li>How often do Air Traffic Control Towers (ATCT) fail as a result of technical outages or convective weather conditions, such as lighting strikes?</li>
+                <li>Can we correlate lightning data at airports with outage data for ATCT systems?</li>
+                <li>Can we assess the impact of lightning-induced outages on operational cost, delays and throughput at airports during period of 2009-2019?</li>
+                <li>Can we extrapolate the outage data to estimate the probable operational cost, delays and throughput at the selected airports for 2020-2050?</li>
+                <li>Can we compare results of pre- and post-improvements at the selected airports?</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Methods</h5>
+            <h2 class="currency-title">Snake sequence Mapping of Outages</h2>
+            <p>
+              We totally identified 133 lightening induced outage sequences for a decade of data. We further worked on identifying all outages that happened in the interval of a lightening outage start and end time. We set the outage start time limit as 24 hours after a lightening strike to filter authentic data from the data set that directly could correlate with lightening outages.   
+            </p>
+            <br>
+            <p>
+              The outages in this bracket were sequentially arranged based on increasing time and we did sequential plotting to better understanding the network connection of outages. There would be 133 such diagrams.
+            </p>
+            <img alt="Snake Diagram" src="snake_dia.jpeg" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Spatial Analysis of Outages</h2>
+            <p>
+              For these 133 lightening connected outages, we further plot the outage distribution. The coordinates were plotted. Although we do set the limit to overall outages as 24 hours, we observe that there are some outages that do happen at a different coordinate from the lightning strike. 
+            </p>
+            <img alt="Spatial Map" src="Spatial_dia.png" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Two types of Centrality</h2>
+            <p>
+              <b>Degree centrality:</b> Measures the number of edges attached to a node. It is used to determine what node ( here equipment) is most connected. We calculate the normalized degree centrality of a node by adding up the number of edges that are attached to the node and divide it by the total number of nodes minus one.
+            </p>
+            <br>
+            <p>
+              We took a consolidated list of all unscheduled equipment outages following a lightening ( 133 Nos of sequences) and grouped them for each airport from 2008-2018. We plotted the graphs for these under the two centrality criteria to identify equipment that are most connected.
+            </p>
+            <img alt="Degree of Centrality" src="Centrality_dia.jpeg" class="img">
+            <p>
+             <b>Eigen Centrality:</b>This parameter measures the node’s relative influence in the network, or how well a node is connected to other highly connected nodes. It is the mathematical measurement of the phrase “It’s not what you know but who you know.” 
+            </p>
+            <img alt="Eigen Vectory Centrality" src="Eigen_dia.jpeg" class="img">
+        </div>
+
+        <!-- Time Gap Analysis -->
+        <div class="section">
+            <h5 class="subtitle"></h5>
+            <h2 class="currency-title">Time Gap Analysis</h2>
+            <p>
+              We normalize the time windows by fixing a specific lightening outage at a T=0 and then fix the time of remaining outages by taking the time difference with respect to their respective lightening outages.The equipments are arranged in the order of increasing time gap or in the sequence in which they occur. We can infer the time taken for an equipment to roughly get affected directly correlating with how reliable it is with respect to the lightening outages.
+            </p>
+            <img alt="Time Gap" src="timegap.jpg" class="img">
+        </div>
+
+        <div class="section">
+            <h5 class="subtitle">Results</h5>
+            <h2 class="currency-title">Conclusions</h2>
+            <ol>
+              <li>Owing to a Non-Disclosure Agreement, I am disclosing only 1 example result from each result category.
+              <li>Basis these results, we presented the Federal Aviation with equipments to protect against lightening strikes.
+              <li>This would help them divert investments to critical units to ensure reduction in airline delays.
+              <li>As a current project, we are working on recommending operations of Hub airports during future pandemic outbreaks, through network analysis.
+            </p>
+        </div>
+    </div>
+
+    <footer class="c12 grid">
+        <div class="c6-left">
+          <p>Want to work with me or grab some coffee casually? Feel free to email me at <a href="mailto:venkat.raju@berkeley.edu?subject=Hey, I found you interesting!" target="_blank" rel="noopener">venkat.raju@berkeley.edu</a></p>
+        </div>
+        <div class="social">
+            <a href="https://medium.com/@venkat.raju" target="_blank" rel="noopener"><img alt="Medium icon" src="icons/medium.svg" class="icons"></a>
+            <a href="https://www.linkedin.com/in/venkatrajup/" target="_blank" rel="noopener"><img alt="LinkedIn icon" src="icons/linkedin.svg" class="icons"></a>
+        </div>
+
+        <!-- Back -->
+        <a href="/" aria-label="back" class="content-web no-display back"></a>
+        <!-- Scroll To Top -->
+        <a href="#top" aria-label="scroll to top" class="content-web no-display scroll-to-top"></a>
+    </footer>
+
+</body>
+
+</html>
